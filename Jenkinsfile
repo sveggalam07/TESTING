@@ -16,7 +16,7 @@ pipeline {
         stage('Git') {
             steps {
                 echo 'cloning github repo'
-                git 'https://github.com/sveggalam07/nodejs-unit-testing-jest.git'
+                git branch: 'main', url: 'https://github.com/sveggalam07/nodejs-unit-testing-jest'
             }
         }
         stage('Build')
